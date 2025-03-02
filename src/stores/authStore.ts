@@ -1,6 +1,8 @@
 import { create } from 'zustand';
 import axios from 'axios';
 
+const API_URL = process.env.VITE_API_URL;
+
 interface User {
   id: string;
   name: string;
@@ -28,7 +30,7 @@ export const useAuthStore = create<AuthState>((set) => ({
   signIn: async (email: string, password: string) => {
     try {
       set({ loading: true });
-      const response = await axios.post('/api/auth/login', { email, password });
+      const response = await axios.post(`${API_URL}/api/auth/login`, { email, password });
       
       const { token, user } = response.data;
       
@@ -53,7 +55,7 @@ export const useAuthStore = create<AuthState>((set) => ({
   signUp: async (email: string, password: string, fullName: string, role: string) => {
     try {
       set({ loading: true });
-      await axios.post('/api/auth/signup', { 
+      await axios.post(`${API_URL}/api/auth/signup`, { 
         email, 
         password, 
         name: fullName, 
