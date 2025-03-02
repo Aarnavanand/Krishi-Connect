@@ -18,7 +18,10 @@ connectDB();
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: '*', // Allow all origins for development
+  origin: [
+    'https://krishi-connect-hazel.vercel.app', // Production frontend
+    'http://localhost:5173' // Local development frontend
+  ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']

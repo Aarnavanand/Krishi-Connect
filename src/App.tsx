@@ -12,7 +12,6 @@ import { useAuthStore } from './stores/authStore';
 import { ThemeProvider } from './context/ThemeContext';
 import axios from 'axios';
 import { useEffect } from 'react';
-
 // Set up axios interceptor for authentication
 axios.interceptors.request.use(
   (config) => {
