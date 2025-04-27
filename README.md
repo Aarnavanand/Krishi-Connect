@@ -53,3 +53,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ![Screenshot 2025-04-27 151059](https://github.com/user-attachments/assets/bafacf80-a6a1-4218-821f-f71f641d3a93)
 ![Screenshot 2025-04-27 151106](https://github.com/user-attachments/assets/682a566b-b4b5-4a9f-b3dd-6dabf9ec1a33)
 ![Screenshot 2025-04-27 151116](https://github.com/user-attachments/assets/67031869-c115-458a-9d8d-603f26bd30e2)
+
+📜 License
+This project is licensed under the MIT License.
